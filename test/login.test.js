@@ -13,6 +13,7 @@ describe('Login', () => {
                     'email': 'iago@gmail.com',
                     'senha': '123456789'
                 });
+                
             expect(resposta.status).to.equal(200);
             expect(resposta.body.message).to.equal('Login realizado com sucesso!')
             expect(resposta.body.token).to.be.a('string');
